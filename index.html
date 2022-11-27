@@ -1,0 +1,20 @@
+<script type=module>
+import { bg,show } from "https://js.sabae.cc/egadv.js";
+await bg(23);
+const a = await show("どこの花火でしょう?",["福井","千葉","長野","あなたの自宅","その他"]);
+if(a=="千葉"){
+  await show("正解! 市川市民納涼花火大会です。");
+} else 
+if(a=="福井"){
+  await show("残念 不正解です");
+}
+if(a=="長野"){
+  await show("それも違うかも");
+}
+if(a=="あなたの自宅"){
+  await show("立派ですが それも違います");
+}
+if(a=="その他"){
+  await show("よーーく見てください");
+}
+</script>
